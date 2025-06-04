@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERASER 소개페이지</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <i class="fas fa-gamepad"></i>
+                <span>Eraser 소개 테스트</span>
+            </div>
+<!--             <ul class="nav-menu">
+                <li><a href="#about">소개</a></li>
+                <li><a href="#achievements">수상이력</a></li>
+                <li><a href="#teams">소속팀</a></li>
+                <li><a href="#media">미디어</a></li>
+                <li><a href="#contact" class="contact-btn">문의하기</a></li>
+            </ul> -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-subtitle">경험, 성장, 도전</p>
+                <h1 class="hero-title">프로게이머 양성 전문 강사</h1>
+                <p class="hero-description">
+                    10년간의 프로게임 감독 경험을 바탕으로<br>
+                    여러분의 e스포츠 꿈을 현실로 만들어드립니다
+                </p>
+                <button class="hero-btn" onclick="scrollToSection('about')">
+                    자세히 알아보기
+                </button>
+            </div>
+            <div class="hero-image">
+                <img src="https://i.imgur.com/ymE2p45.png" alt="프로필 사진">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>프로게임 감독에서 강사로</h3>
+                    <p>
+                        안녕하세요. 저는 10년간 프로게임팀 감독으로 활동하며 수많은 선수들과 함께 
+                        대회 우승의 기쁨을 나눠왔습니다. 현재는 그 경험을 바탕으로 일반인들을 
+                        대상으로 프로게이머 양성 강의를 진행하고 있습니다.
+                    </p>
+                    <p>
+                        단순한 게임 실력 향상이 아닌, 프로게이머로서 갖춰야 할 멘탈, 전략적 사고, 
+                        팀워크까지 체계적으로 가르치고 있습니다. 여러분도 프로게이머의 꿈을 
+                        이루실 수 있도록 최선을 다해 도와드리겠습니다.
+                    </p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">년 경력</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">지도 선수</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">대회 우승</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">대회 수상 이력</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>LoL Champions Korea</h3>
+                    <p class="achievement-year">2023</p>
+                    <p class="achievement-desc">리그 오브 레전드 국내 최고 대회 우승</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Valorant Champions</h3>
+                    <p class="achievement-year">2022</p>
+                    <p class="achievement-desc">발로란트 월드 챔피언십 준우승</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Asian Games</h3>
+                    <p class="achievement-year">2022</p>
+                    <p class="achievement-desc">아시안게임 e스포츠 금메달</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>MSI Championship</h3>
+                    <p class="achievement-year">2021</p>
+                    <p class="achievement-desc">미드시즌 인비테이셔널 우승</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Worlds Championship</h3>
+                    <p class="achievement-year">2020</p>
+                    <p class="achievement-desc">리그 오브 레전드 월드 챔피언십 우승</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>LCK Spring</h3>
+                    <p class="achievement-year">2019</p>
+                    <p class="achievement-desc">LCK 스프링 시즌 우승</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teams Section -->
+    <section id="teams" class="teams">
+        <div class="container">
+            <h2 class="section-title">소속팀 이력</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2020-2023</div>
+                    <div class="timeline-content">
+                        <h3>T1 (SKT T1)</h3>
+                        <p class="team-role">Head Coach</p>
+                        <p class="team-desc">
+                            리그 오브 레전드 팀의 헤드코치로 활동하며 월드 챔피언십 우승을 이끌었습니다. 
+                            전략 수립부터 선수 멘탈 관리까지 팀 운영 전반을 담당했습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2018-2020</div>
+                    <div class="timeline-content">
+                        <h3>Gen.G Esports</h3>
+                        <p class="team-role">Strategic Coach</p>
+                        <p class="team-desc">
+                            다양한 게임 타이틀의 전략 코치로 활동하며 팀의 전술적 발전을 이끌었습니다. 
+                            특히 발로란트 팀의 국제 대회 진출에 기여했습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2016-2018</div>
+                    <div class="timeline-content">
+                        <h3>KT Rolster</h3>
+                        <p class="team-role">Assistant Coach</p>
+                        <p class="team-desc">
+                            어시스턴트 코치로 시작하여 선수들의 개별 훈련과 팀 조화를 담당했습니다. 
+                            이 시기에 코칭의 기초를 다졌습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2014-2016</div>
+                    <div class="timeline-content">
+                        <h3>Samsung Galaxy</h3>
+                        <p class="team-role">Analyst</p>
+                        <p class="team-desc">
+                            게임 분석가로 커리어를 시작했습니다. 상대팀 분석과 데이터 수집을 통해 
+                            팀의 승률 향상에 기여했습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media" class="media">
+        <div class="container">
+            <h2 class="section-title">미디어 출연</h2>
+            <p class="section-subtitle">TV 출연 및 인터뷰 모음</p>
+            
+            <div class="swiper mediaSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="media-card">
+                            <img src="https://i.imgur.com/vCHb2F4.jpeg" alt="TV 출연 1">
+                            <div class="media-overlay">
+                                <h3>MBC 게임쇼</h3>
+                                <p>프로게이머 양성 과정 소개</p>
+                                <a href="https://github.com/yourusername/media1" target="_blank" class="media-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card">
+                            <img src="https://i.imgur.com/ymE2p45.png" alt="TV 출연 2">
+                            <div class="media-overlay">
+                                <h3>KBS 스포츠</h3>
+                                <p>e스포츠 발전 방향 토론</p>
+                                <a href="https://github.com/yourusername/media2" target="_blank" class="media-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card">
+                            <img src="https://i.imgur.com/vCHb2F4.jpeg" alt="TV 출연 3">
+                            <div class="media-overlay">
+                                <h3>SBS 뉴스</h3>
+                                <p>월드 챔피언십 우승 인터뷰</p>
+                                <a href="https://github.com/yourusername/media3" target="_blank" class="media-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card">
+                            <img src="https://i.imgur.com/ymE2p45.png" alt="TV 출연 4">
+                            <div class="media-overlay">
+                                <h3>JTBC 게임토크</h3>
+                                <p>프로게이머 멘탈 관리법</p>
+                                <a href="https://github.com/yourusername/media4" target="_blank" class="media-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card">
+                            <img src="https://i.imgur.com/vCHb2F4.jpeg" alt="TV 출연 5">
+                            <div class="media-overlay">
+                                <h3>유튜브 인터뷰</h3>
+                                <p>강의 프로그램 소개</p>
+                                <a href="https://github.com/yourusername/media5" target="_blank" class="media-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">문의하기</h2>
+            <p class="section-subtitle">프로게이머의 꿈을 함께 이뤄나가요</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>coach@progamer.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>010-1234-5678</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-youtube"></i>
+                        <span>ProGamer Academy</span>
+                    </div>
+                </div>
+                <button class="contact-btn-large">강의 문의하기</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ProGamer Academy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
